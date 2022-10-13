@@ -4,11 +4,11 @@ import requests
 import re
 
 # Determine what product the user is looking for
-product = input("What product would you like to search for? ")
+product = input("What product would you like to search for? ").lower()
 url = f'https://www.newegg.ca/p/pl?d={product}'
 
 # Obtain HTML information from the URL
-page_info = requests.get(url).text
+page_info = requests.get(url).text.lower()
 soup = BeautifulSoup(page_info, "html.parser")
 search_page = soup.find(class_='item-cells-wrap border-cells items-grid-view four-cells expulsion-one-cell')
 search_items = search_page.find_all(text=re.compile(product)) 
