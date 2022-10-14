@@ -11,7 +11,7 @@ The products are then displayed to the User sorted in ascending order by their r
 Install latest version of Python 3
 
 Install latest version of beautifulsoup4 package:
-    pip install beautifulsoup4
+    pip3 install beautifulsoup4
 
 Install latest version of requests package:
-    pip install requests
+    pip3 install requests
