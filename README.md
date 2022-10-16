@@ -1,4 +1,4 @@
-# product-scraper
+# product-searcher
 
 Python scraper that takes a product input by the User from a popular
 computer hardware and electronics online retailer and stores each individual 
